@@ -103,28 +103,46 @@
     <div class="container">
       <a href="#" class="footer__logo-link"><img src="images/logo.svg" alt="" class="footer__logo"></a>
       <div class="wrapper">
-
+        <address class="footer__address">
+          <a href="tel:+1-543-123-4567" class="footer__phone"><img src="image/icon-phone.svg" alt="" aria-hidde6n="true" class="footer__icon">Phone: +1-543-123-4567</a>
+          <a href="mailto:example@fylo.com" class="footer__email"><img src="images/icon-email.svg" alt="" aria-hidden="true" class=footer__icon>example@fylo.com</a> 
+        </address>
+    <!-- Start footer navigation -->
+        <nav class="navbar navbar--footer" aria-label="footer">
+          <ul class="navbar__list">
+            <li class="navbar__item"><a href="#" class="navbar__link">About Us</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Jobs</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Press</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Contact Us</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Terms</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Privacy</a></li>
+          </ul>
+        </nav>
+        <!-- End of footer navigation -->
+        <!-- Start social links -->
+        <div class="social">
+          <ul class="social__list horizontal-list">
+            <li><a href="#" class="social__link" aria-label="Facebook" target="blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#" class="social__link" aria-label="twitter" target="blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#" class="social__link" aria-label="instagram" target="blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+        <!-- End of social links -->
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Glenda J. Reed</a>.
+        </p>
+      </div>
   </footer>
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Glenda J. Reed</a>.
-    </p>
-  </footer>
+        <!-- End of footer -->
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
+        <!-- Only enable AOS animations if prefers-reduced-motion set to false -->
+        <script>
+          AOS.init({
+            disable: window.matchMedia("(prefers-reduced-motion: reduce)"),
+          });
+        </script>
+        
 </body>
 </html>
