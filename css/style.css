@@ -225,6 +225,338 @@ input[type="email"] {
     font-size: 8px;
 }
 
+.quote {
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    height: 5px;
+}
+
+.testimonial .quote::before {
+    font-family: 'Raleway', sans-serif;
+    content: "";
+    font-size: 30px;
+    padding-bottom: 0;
+}
+
+.testmonial .text {
+    color: var(--dark-blue);
+    font-weight: 500;
+    padding: 0px 0 15px;
+}
+
+.profile h4 {
+    color: var(--dark-blue);
+    font-size: 12px;
+}
+
+.profile p {
+    color: var(--dark-blue);
+    font-size: 8px;
+    word-spacing: default;
+}
+
+/* Section 3 */
+
+.three {
+    text-align: center;
+    background-color: var(--desaturated-blue);
+    color: #fff;
+    padding: 60px 40px 80px;
+}
+
+.three .inputemail {
+    height: 35px;
+    border-radius: 3px;
+    border: none;
+    width: 85%;
+    margin: 10px 0;
+}
+
+.three .inputbutton {
+    height: 35px;
+    font-size: 12px;
+    font-weight: 500;
+    width: 85%;
+    padding: 0;
+}
+
+.three .inputbutton:hover {
+    background-color: hsl(224, 100%, 74%);
+    opacity: 100%;
+}
+
+.three .input::placeholder {
+    font-size: 11px;
+    opacity: 40%;
+}
+
+.three p {
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+/* Footer */
+
+.logowhite {
+    width: 100%;
+    height: 95px;
+    padding: 45px 0 0 40px;
+}
+
+footer,
+.sections,
+.phone,
+.email,
+.links1,
+.links2,
+.socialMedia {
+    display: flex;
+}
+
+footer,
+.sections,
+.links1,
+.links2 {
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer {
+    background-color: var(--dark-blue);
+    color: #fff;
+}
+
+.sections {
+    padding: 30px 40px 60px;
+    gap: 50px;
+}
+
+.email,
+.phone {
+    gap: 15px;
+}
+
+.email p,
+.phone p {
+    margin: 8px;
+}
+
+.email img,
+.phone img {
+    margin: 10px 0;
+    width: 20px;
+    height: 100%;
+}
+
+.links1 a,
+.links2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.socialMedia {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.socialMedia a {
+    text-decoration: none;
+}
+
+.fa-twitter,
+.fa-facebook,
+.fa-instagram {
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 50%;
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+}
+
+.fa-twitter,
+.fa-instagram {
+    padding: 6px;
+}
+
+/* Responsive desktop */
+
+@media screen and (min-width: 745px) {
+    header {
+        padding: 90px;
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 0 25px;
+    }
+
+    /* Section 1 */
+
+    .banner {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 0 50px 170px;
+        text-align: left;
+        gap: 25px;
+        background-image: url('images/bg-curve-desktop.svg');
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 38px;
+        line-height: 55px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+    .banner .side {
+        width: 50%;
+    }
+
+    .banner .form {
+        display: flex;
+    }
+    
+    .banner .inputemail {
+        width: 300px;
+        margin: 0 20px;
+    }
+
+    .banner .inputbutton {
+        width: 200px;
+        height: 42px;
+    }
+
+    /* Section 2 */
+
+    .two {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: auto;
+        padding: 0 50px 30px;
+        gap: 25px;
+        background-color: hsla(240, 80%, 98%, 0.795);
+    }
+
+    .two img {
+        width: 100%;
+        padding: 100px 20px 40px;
+    }
+
+    .two .right {
+        width: 100%;
+    }
+
+    .two h2 {
+        text-align: left;
+        font-size: 40px;
+    }
+
+    .two p {
+        font-size: 16px;
+    }
+
+    .linkcenter {
+        justify-content: left;
+        align-items: left;
+        margin: 10px 0;
+        padding: 0 20px;
+    }
+
+    .linkcenter a {
+        font-size: 16px;
+    }
+
+    .linkcenter .icon {
+        height: 31px;
+        width: 30px;
+    }
+
+    .testimonial {
+        width: 345px;
+    }
+
+    .testimonial p {
+        font-size: 12px;
+    }
+
+    .profile img {
+        width: 25px;
+        padding: 0;
+    }
+
+    /* Section 3 */
+
+    .three {
+        display: flex;
+        gap: 230px;
+        text-align: left;
+        padding: 80px;
+    }
+
+    .three h4 {
+        font-size: 32px;
+    }
+
+    .three p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .three .side {
+        width: 50%;
+    }
+
+    .three .inputemail,
+    .three .inputbutton {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .three .inputemail {
+        width: 90%;
+        margin: 10px 0 25px;
+    }
+
+    .three .inputbutton {
+        width: 40%;
+    }
+
+    .sections {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 80px 70px;
+    }
+
+    footer {
+        gap: 0;
+    }
+
+    .logowhite {
+        width: 280px;
+        padding: 60px 0 0 80px;
+        height: 120px;
+    }
+
+    .socialMedia {
+        padding-right: 200px;
+    }
+}
 
 
 
